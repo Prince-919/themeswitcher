@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.theme-light{
+    --helper-color : #54c75b;
+    --white :#ffffff;
+    --nextWhite: whitesmoke;
+    --black :#000;
+
+}
+.theme-dark{
+    --helper-color : #54c75b;
+    --white :#121212;
+    --nextWhite: #0b0b0b;
+    --black :#fff;
+}
+.theme-ocean{
+    --helper-color : #54c75b;
+    --white :#252c35;
+    --nextWhite: #20272e;
+    --black :#fff;
+}
+.theme-sepia{
+    --helper-color : #704214;
+    --white :#fbf1c7;
+    --nextWhite: #eadfb5;
+    --black :#704214;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: background .3s ease-in-out;
+}
+body{
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Noto Sans', sans-serif;
+    background: var(--white);
+    color: var(--black);
+}
+.container{
+    width: 1192px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+}
+nav .branding{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--helper-color);
+    text-transform: uppercase;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 1rem;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--black);
+}
+nav ul li select{
+    color: var(--black);
+    padding: 2px 10px;
+    display: inline-block;
+    height: 30px;
+    border: none;
+    width: 150px;
+    outline: none;
+    border-radius: 5px;
+    background: var(--nextWhite);
+    cursor: pointer;
+}
+header{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+}
+header h1{
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+}
+header p{
+    font-size: 1.3rem;
+    width: 70%;
+    margin-top: 1rem;
+}
+header .rightSide img{
+    width: 100%;
+    position: relative;
+    top: 40px;
+    right: -30px;
+}
+
+header button{
+    color: var(--white);
+    background: var(--helper-color);
+    padding: 0.6rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section.hero{
+    background-color: var(--nextWhite);
+    height: 400px;
+    padding: 2rem;
+}
